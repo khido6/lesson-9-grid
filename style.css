@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
+body{
     background-color: blue;
     padding: 90px 70px;
     height: 1200px;
@@ -21,7 +21,7 @@ h1{
    width: 100%;
    /*width: 96%;*/
    height: 170px;
-   border: 1px solid black;
+   /*border: 1px solid black;*/
    display: flex;
    align-items: center;
    justify-content: center;
@@ -30,15 +30,17 @@ h1{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(170px, auto);
     /*grid-template-columns: 26% 20% 26% 28%;*/
-    /*grid-gap: 20px 10px;*/
-    grid-template-rows: minmax(10px, auto); 
-    grid-template-areas:
-		"mason resp header header"
-		"mason fluid black negat"
-		"flex mas black maas"
-		"dom mas footer footer"; 
+    grid-gap: 10px;
+    /*grid-template-rows: minmax(100px, auto); */
+    /*grid-template-areas:
+		'mason resp header header'
+		'mason fluid black negat'
+		'flex mas black maas'
+		'dom mas footer footer';*/
 }
-.box 11{
-    
+.box 1{
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
