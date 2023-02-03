@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: blue;
+    padding: 90px 70px;
+    height: 1200px;
+}
+.mean{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    color: #ffffff;
+}
+.box{
+   background-color: #ffffff;
+   width: 100%;
+   /*width: 96%;*/
+   height: 170px;
+   border: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: 26% 20% 26% 28%;*/
+    /*grid-gap: 20px 10px;*/
+    grid-template-rows: minmax(10px, auto); 
+    grid-template-areas:
+		"mason resp header header"
+		"mason fluid black negat"
+		"flex mas black maas"
+		"dom mas footer footer"; 
+}
+.box 11{
+    
+}
